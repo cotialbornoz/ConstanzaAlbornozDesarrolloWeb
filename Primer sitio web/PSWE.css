@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+html{
+    font-size: 10px;
+    font-family: monospace;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+/* NAVIGATOR */
+
+nav{
+    width: 100%;
+    background-color: #0f1318;
+    color: #fff;
+    height: 6rem;
+    line-height: 6rem;
+}
+
+.navicontainer{
+    width: 90%;
+    margin: auto;
+}
+
+.navititulo{
+    float: left;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+    padding: 0 30px 0 30px;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+    text-align: center;
+    padding: 0 30px 0 30px;
+    word-spacing: 1rem;
+}
+
+.githubicon{
+    width: 30px;
+}
+
+.letterboxdicon{
+    width: 30px;
+}
+
+/* LINKS */
+
+.tooltip {
+
+    display: inline-block;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 130px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -65px;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+    height: 25vh;
+    position: relative;
+    background-color: #4c8787;
+}
+
+h1, h2{
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    font-family: Roboto;
+    font-weight:900;
+    font-size: 6rem;
+    bottom: -10%;
+    text-align: center;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight:900;
+    font-size: 6rem;
+    bottom: -10%;
+    word-spacing: 0.9rem;
+}
+
+h2{
+    font-weight: 200;
+    font-style: italic;
+    font-size: 1.8rem;
+    bottom: 55%; 
+}
+
+/* CUERPO*/
+
+section{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    background: rgb(78,78,86);
+    background: linear-gradient(180deg, rgba(76,135,135,1) 0%, rgba(249,211,112,1) 50%);
+}
+
+.moviecard{
+    margin: 30px 30px 30px;
+    width: 24rem;
+    background-color: rgba(255, 255, 255, 0.685);
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0rem 0rem 3rem rgba(0, 0, 0, 0.062);
+    filter: grayscale(100%);
+    border: 1px solid #f3f6ff;
+}
+
+.moviecard:hover{
+    filter: grayscale(0%);
+    transition-delay: 40ms;
+}
+
+.movieposter{
+    width: 20rem;
+    border: 2px solid #f3f6ff;
+    padding: 5px;    
+}
+
+h3{
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+}
+
+.moviecontent{
+    width: 21rem;
+    font-size: 1.09rem;
+    font-weight: 200;
+    line-height: 2;
+    text-align: left;
+}
+
+.letterboxdlogo{
+    width: 3rem;
+    margin-left: -11px;   
+}
+
+/* FOOTER */
+
+footer{
+    position: relative;
+    width: 100%;
+    background-color: #0f1318;
+    height: fit-content;
+    font-family: Times New Roman;
+}
+
+.footercontainer{
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.frase{
+    color: white;
+    font-size: 3rem;
+    text-shadow: -4px 2px 0 #0000002d;
+    box-shadow: inset 0 0 0 0 #4c8787;
+    font-weight: 800;
+    font-style: italic;
+    word-spacing: 0.9rem;
+}
+
+.frase:hover{
+    box-shadow: inset 100rem 0 0 0 #4c8787;
+    color: white;
+    transition-delay: 90ms;
+}
+
+.autor{
+    color: white;
+    font-family: monospace;
+    font-size: 1.3rem;
+}
+
